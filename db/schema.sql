@@ -5,7 +5,7 @@ CREATE DATABASE employees_db;
 USE employees_db;
 
 
-CREATE TABLE employee
+CREATE TABLE employees
 (
     employee_id INT,
     first_name VARCHAR(30) NULL,
@@ -15,19 +15,19 @@ CREATE TABLE employee
     PRIMARY KEY (employee_id)
 );
 
-CREATE TABLE role
+CREATE TABLE roles
 (
-    id INT,
+    role_id INT,
     title VARCHAR(30) NULL,
     salary DECIMAL(10,4) NULL,
     department_id INT NULL,
     raw_uk DECIMAL(10,4) NULL,
     raw_eur DECIMAL(10,4) NULL,
     raw_row DECIMAL(10,4) NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (role_id)
 );
 
-CREATE TABLE department
+CREATE TABLE departments
 (
     department_id INT NOT NULL,
     department_name VARCHAR(30) NULL,
@@ -35,7 +35,7 @@ CREATE TABLE department
 );
 
 SELECT *
-FROM employee;
+FROM employees;
 select *
-from department;
-select * from role;
+from departments;
+select * from roles;
