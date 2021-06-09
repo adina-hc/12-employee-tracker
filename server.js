@@ -17,7 +17,7 @@ const connection = mysql.createConnection({
 connection.connect((err) => {
   if (err) throw err;
   console.log(`connected`)
-  runSearch();
+  // add function to run the employee db;
 });
 
 const readEmployees = () => {
