@@ -1,25 +1,4 @@
-// Require mysql
-const mysql = require('mysql');
-const inquirer = require('inquirer');
-const cTable = require('console.table');
+// Require menu to start application
+const displayMenu = require("./menu");
 
-
-// Connect to database
-const connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password:'',
-    database: 'employees_db',
-
-});
-
-connection.connect((err) => {
-  if (err) throw err;
-  console.log(`connected`)
-  // add function to run the employee db;
-});
-
-const readEmployees = () => {
-    connection.query('')
-}
+displayMenu();
