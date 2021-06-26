@@ -26,6 +26,16 @@ As a bonus, included is the option to view employees by manager.
 * InquirerJs NPM to interact with user via command-line
 * console.table to print MySQL rows to the console
 
+## Mockup animation
+
+
+![Employee Tracker](./Assets/employee-tracker.gif)
+
+
+
+
+
+
 ## Link to Repo
 
 [GitHub Repo](https://github.com/adina-hc/12-employee-tracker)
