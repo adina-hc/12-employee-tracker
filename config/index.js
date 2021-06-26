@@ -1,4 +1,5 @@
-const mysql = require("mysql")
+const util = require('util');
+const mysql = require('mysql');
 
 const dbConnect = mysql.createConnection({
     host: 'localhost',
@@ -12,7 +13,7 @@ const dbConnect = mysql.createConnection({
 dbConnect.connect((err) => {
   if (err) throw err;
   console.log(`connected to port 3306`)
-  // add function to run the employee db
+  
 });
 
 module.exports = dbConnect;
